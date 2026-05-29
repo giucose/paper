@@ -2,7 +2,7 @@ import csv
 from pathlib import Path
 from typing import List
 from profiles.utils.git_utils import clone_repo
-from profiles.ai_component_profile.file_extensions import get_relevant_extensions
+from profiles.utils.file_extensions import get_relevant_extensions
 
 def extract_file_extensions(github_urls: List[str], output_file: Path, years: List[int]):
     """
