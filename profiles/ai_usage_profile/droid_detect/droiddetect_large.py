@@ -11,7 +11,7 @@ import torch.nn.functional as F
 from tokenizers import Tokenizer
 import csv
 
-from profiles.ai_usage_profile.whodunit.compute_whodunit_metrics import compute_diff_and_store
+from profiles.ai_usage_profile.helpers import compute_diff_and_store
 
 class RMSNorm(nn.Module):
     def __init__(self, dim):

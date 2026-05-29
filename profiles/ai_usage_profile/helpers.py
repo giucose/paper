@@ -5,9 +5,8 @@ from typing import List
 from dateutil import parser
 import subprocess
 import hashlib
-from collections import defaultdict
 
-from profiles.ai_component_profile.file_extensions import get_relevant_extensions
+from profiles.utils.file_extensions import get_relevant_extensions
 
 def compute_ai_usage_profile(
     repo_id: str,
@@ -216,34 +215,6 @@ def compute_developer_activity_metrics_data(
     
     return row
 
-def compute_whodunit_features(
-    repo_id: str,
-    repo_path: Path,
-    commits: List[str],
-    year: int,
-    reuse_features: bool = True,
-    reuse_diffs: bool = True
-): 
-    base_dir = compute_diff_and_store(
-        commits,
-        repo_path,
-        repo_id,
-        year,
-        reuse_diffs=reuse_diffs
-    )
-    
-    for commit in commits:
-        if not (base_dir / commit / "flat").exists():
-            print(f"[INFO] Skipping whodunit feature extraction for {commit} as it was not processed in diff computation.")
-            continue
-
-        output_file = Path("features") / str(year) / repo_id / (commit + "_whodunit_features.csv")
-        flat_dir = base_dir / commit / "flat"
-        
-        extract_features(flat_dir, output_file, reuse_features)
-
-    print("[INFO] WHODUNIT features for repo:", repo_id, "extracted and stored.")
-    
 def compute_diff_and_store(commits: List[str], repo_path: Path, repo_id: str, year: int, reuse_diffs: bool = True) -> Path:
     # Only process source/text files
     relevant_extensions= get_relevant_extensions()

@@ -2,8 +2,7 @@ from pathlib import Path
 import subprocess
 from dateutil import parser
 import csv
-
-from profiles.software_quality_profile.extract_all_programming_languages import get_relevant_extensions
+from profiles.utils.file_extensions import get_relevant_extensions
 
 def compute_developer_activity_metrics_data_per_commit(
     repo_path: Path,

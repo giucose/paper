@@ -31,7 +31,6 @@ def compute_ai_usage_profile(rows):
     # for each commit, get following:
     # - developer metrics
     # - droiddetect results
-    # - whodunit results
 
     # combine into AI usage profile
 
