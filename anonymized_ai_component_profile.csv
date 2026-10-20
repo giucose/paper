@@ -1,0 +1,93 @@
+repository_id,has_ai_component,ai_component_count,primary_ai_task,secondary_ai_task,primary_ai_role,ai_frameworks,ai_entry_points,ai_model_type,ai_online_inference,ai_training_in_repo,is_verified_by_report
+2017_1,False,0,,,,,,,,,True
+2017_2,False,0,,,,,,,,,True
+2018_1,False,0,,,,,,,,,True
+2018_2,False,0,,,,,,,,,True
+2018_3,False,0,,,,,,,,,True
+2018_4,False,0,,,,,,,,,True
+2018_5,False,0,,,,,,,,,True
+2018_6,False,0,,,,,,,,,True
+2018_7,False,0,,,,,,,,,True
+2018_8,False,0,,,,,,,,,True
+2018_9,False,0,,,,,,,,,True
+2018_10,False,0,,,,,,,,,True
+2018_11,False,0,,,,,,,,,True
+2018_12,False,0,,,,,,,,,True
+2018_13,False,0,,,,,,,,,True
+2018_14,False,0,,,,,,,,,True
+2019_1,False,0,,,,,,,,,True
+2019_2,False,0,,,,,,,,,True
+2019_3,True,1,"Object Detection, Classification",,Backend,YOLOv3,api_endpoints,CNN / Yolov3,False,TRUE,True
+2019_4,False,0,,,,,,,,,True
+2019_5,False,0,,,,,,,,,True
+2019_6,True,2,Classification,License plate recognition,Supervised learning-based visual classifier for car make recognition,"ResNet-152, ResNet-50, EfficientNet","local, api_endpoints","Deep CNN, LPR",True,TRUE,True
+2020_1,False,0,,,,,,,,,True
+2020_2,True,1,Binary Classification,Prediction,Decision support / risk prediction,"TensorFlow, Keras, scikit-learn, NumPy, Pandas","local, function_calls",Feedforward Neural Network (MLP),False,TRUE,True
+2020_3,False,0,,,,,,,,,True
+2020_4,False,0,,,,,,,,,True
+2020_5,False,0,,,,,,,,,True
+2020_6,False,0,,,,,,,,,True
+2020_7,False,0,,,,,,,,,True
+2020_8,False,0,,,,,,,,,True
+2020_9,True,1,"Reccomendation, Ranking",Simmilarity-based Classification,Decision Support System for User Personalization,"math, custom",function_calls,Heuristic kNN variant / similarity search recommender,False,TRUE,True
+2020_10,False,0,,,,,,,,,True
+2020_11,False,0,,,,,,,,,True
+2020_12,False,0,,,,,,,,,True
+2020_13,False,0,,,,,,,,,True
+2020_14,False,0,,,,,,,,,True
+2020_15,False,0,,,,,,,,,True
+2020_16,False,0,,,,,,,,,True
+2020_17,False,0,,,,,,,,,True
+2020_18,False,0,,,,,,,,,True
+2020_19,False,0,,,,,,,,,True
+2020_20,False,0,,,,,,,,,True
+2020_21,False,0,,,,,,,,,True
+2021_1,True,1,Natural Language Intent Classification,Entity extraction from text snippets,Document understanding / Automated workflow trigger detection,"Rasa, SpaCy, HuggingFace transformers, DistilBERT (transformer-based NLP stack), PyTorch/TensorFlow-compatible ecosystem",api_endpoints,DistilBERT-based transformer classifier with optional entity extraction head,True,PARTIAL (tuning),True
+2021_2,False,0,,,,,,,,,True
+2021_3,False,0,,,,,,,,,True
+2021_4,False,0,,,,,,,,,True
+2021_5,False,0,,,,,,,,,True
+2021_6,False,0,,,,,,,,,True
+2021_7,False,0,,,,,,,,,True
+2021_8,False,0,,,,,,,,,True
+2021_9,False,0,,,,,,,,,True
+2022_1,False,0,,,,,,,,,True
+2022_2,False,0,,,,,,,,,True
+2022_3,False,0,,,,,,,,,True
+2022_4,False,0,,,,,,,,,True
+2022_5,False,0,,,,,,,,,True
+2022_6,False,0,,,,,,,,,True
+2022_7,False,0,,,,,,,,,True
+2022_8,False,0,,,,,,,,,True
+2022_9,False,0,,,,,,,,,True
+2022_10,False,0,,,,,,,,,True
+2022_11,False,0,,,,,,,,,True
+2022_12,False,0,,,,,,,,,True
+2022_13,True,2,Optical Character Recognition,Image Preprocessing and MRZ character segmentation,Precition Engine,"TensorFlow, PyTorch stack (via torchvision), OpenCV-based CV pipeline, OCR libraries (easyocr, pytesseract), NumPy/SciPy",prediction pipeline modules,Deep learning classifier + OCR hybrid pipeline,False,TRUE,True
+2022_14,True,2,Vehicle Acoustic Classification and Regression,Sound Event Detection using Sliding-window segmentaiton,Prediction / Inference model,"PyTorch, scikit-learn, Librosa, NumPy ecosystem","pipeline, function_calls","PTM CNN (ResNet, EfficientNet) + classic ML classifiers / regressors",False,TRUE,True
+2022_15,False,0,,,,,,,,,True
+2022_16,False,0,,,,,,,,,True
+2022_17,True,1,Time-series forecasting prediction (numerical sequence prediction using historical telemetry/data),Time-series visualization and evaluation support,Forecast inference engine for temporal data prediction,"Darts, Prophet",Prediction pipeline scripts / forecasting modules using Darts models,Time-series forecasting model (statistical / neural forecasting models provided by Darts),True,TRUE,True
+2023_1,False,0,,,,,,,,,True
+2023_2,False,0,,,,,,,,,True
+2023_3,True,1,Retrieval-augmented question answering over document corpus,Semantic search with metadata filtering and conversational context condensation,Document knowledge chatbot / financial document assistant,"LangChain, Weaviate, OpenAI API","function_calls, api_endpoints",RAG pipeline using LLM (no custom model training),True,FALSE,True
+2023_4,False,0,,,,,,,,,True
+2023_5,False,0,,,,,,,,,True
+2023_6,True,1,"Regression, Prediction",,Predictive Analytics,XGBoost,function_calls,Gradient Boosted Trees / XGBRegressor,False,TRUE,True
+2024_1,False,0,,,,,,,,,True
+2024_2,False,0,,,,,,,,,True
+2024_3,True,2,LLM-based text generation (survey question customization and dashboard title/subtitle generation),Semantic embedding generation and vector similarity search,Generative AI assistant with retrieval-augmented context support,"OpenAI API (gpt-3.5-turbo), OpenAI Embeddings API, Supabase (vector storage)",api_endpoints,PTM Transformer (LLM + embeddings by Openai),True,FALSE,True
+2024_4,True,3,"Transcription, semantic extraction",,Context extraction for improving conversation awareness,"Llama3.1, Whisper (faster-whisper), Onnx (speech segmentation)",api_endpoints,PTM LLMs and transformers,False,FALSE,True
+2024_5,True,3,RAG for laws,Integration with existing AI solutions,Aid the user in recieving relevant laws,"Langchain, Tesseract OCR, Azure OpenAI",,"CRAG, PTM transformers",True,FALSE,True
+2024_6,False,0,,,,,,,,,True
+2025_1,False,0,,,,,,,,,True
+2025_2,False,0,,,,,,,,,True
+2025_3,False,0,,,,,,,,,True
+2025_4,False,0,,,,,,,,,True
+2025_5,False,0,,,,,,,,,True
+2025_6,True,2,Text Generation,Decision Support System,To generate questions and hints towards solving maths problems,"OpenAI, Gemini",function_calls,Transformer LLM,True,FALSE,True
+2025_7,False,0,,,,,,,,,True
+2025_8,True,2,Text Generation,Embeddings for Search (RAG),RAG Conversational Agent,"OpenAI API, Gemini, IDUN","function_calls, api_endpoints","PTM LLMs, PTM Embedding models, Transformer-based models",True,FALSE,True
+2025_9,False,0,,,,,,,,,True
+2025_10,False,0,,,,,,,,,True
+2025_11,True,1,Question answering with legal retrieval augmentation (Norwegian law assistant).,"Context retrieval from database, prompt conditioning, and citation linking.",Conversational legal assistant supporting external end-users.,"Google GenAI SDK (Gemini API), Django backend orchestration, requests-based retrieval pipeline.","api_endpoints, function_calls",LLM with RAG,True,FALSE,True
